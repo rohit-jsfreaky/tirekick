@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Tirekick: a window sticker. White paper, near-black type, sticker yellow, red for park-outside, green for done. */
+:root {
+  --paper: #ffffff;
+  --wash: #f4f5f7;
+  --ink: #17191c;
+  --ink-2: #3b4048;
+  --muted: #5c626b;
+  --line: #dadde2;
+  --rule: #c5c9d0;
+  --yellow: #ffc72c;
+  --yellow-soft: #fff4cc;
+  --red: #c62828;
+  --red-soft: #fdecec;
+  --green: #1e7b45;
+  --green-soft: #e4f3ea;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-wash: var(--wash);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-rule: var(--rule);
+  --color-yellow: var(--yellow);
+  --color-yellow-soft: var(--yellow-soft);
+  --color-red: var(--red);
+  --color-red-soft: var(--red-soft);
+  --color-green: var(--green);
+  --color-green-soft: var(--green-soft);
+  --font-sans: var(--font-barlow), "Helvetica Neue", Arial, sans-serif;
+  --font-cond: var(--font-barlow-cond), var(--font-barlow), "Arial Narrow", sans-serif;
+}
+
+html { -webkit-font-smoothing: antialiased; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-barlow), "Helvetica Neue", Arial, sans-serif; }
+::selection { background: var(--yellow); }
+
+@layer components {
+  .label { font-weight: 600; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .cond { font-family: var(--font-barlow-cond), var(--font-barlow), "Arial Narrow", sans-serif; font-weight: 700; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 6px; font-weight: 600; font-size: 15px; padding: 8px 14px; white-space: nowrap; transition: background-color 120ms ease, border-color 120ms ease; }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .btn-ink { background: var(--ink); color: #fff; }
+  .btn-ink:hover:not(:disabled) { background: #2c3036; }
+  .btn-yellow { background: var(--yellow); color: var(--ink); }
+  .btn-yellow:hover:not(:disabled) { background: #f5b800; }
+  .btn-line { background: var(--paper); color: var(--ink); border: 1.5px solid var(--rule); }
+  .btn-line:hover:not(:disabled) { border-color: var(--ink); }
+  .input { width: 100%; background: var(--paper); border: 1.5px solid var(--rule); border-radius: 6px; padding: 8px 12px; font-size: 15px; outline: none; transition: border-color 120ms ease; }
+  .input:focus { border-color: var(--ink); }
+}

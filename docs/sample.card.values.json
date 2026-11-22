@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "template": {
+    "module": "../templates/card.tsx",
+    "id": "tirekick.Card",
+    "version": "1.0.0",
+    "sha256": "f25ace360f5987dc87354557beca501e5aa9cf6136d5fd741d294b45e213ee5d"
+  },
+  "formats": [
+    "card"
+  ],
+  "values": {
+    "vin": "1G1FW6S01H4123456",
+    "car": "2017 Chevrolet Bolt EV LT",
+    "year": 2017,
+    "make": "Chevrolet",
+    "model": "Bolt EV",
+    "body": "Hatchback/Liftback/Notchback",
+    "fuel": "Electric",
+    "plant": "Lansing - Grand River, Michigan",
+    "date": "2026-11-22",
+    "buyer": "Maya Chen",
+    "mileage": "41,200 mi",
+    "price": "$11,900",
+    "open": 0,
+    "done": 1,
+    "toAsk": 2,
+    "recalls": [
+      {
+        "id": "21V-560",
+        "date": "2021-07-23",
+        "part": "Traction battery (electrical system)",
+        "summary": "General Motors LLC (GM) is recalling certain 2017-2019 Chevrolet Bolt EV vehicles previously recalled under NHTSA recall number 20V-701. The high voltage battery could catch fire when charged to full or nearly full capacity.",
+        "consequence": "A battery fire increases the risk of injury.",
+        "remedy": "Defective battery modules will be replaced by GM, free of charge. Owners are advised to take the following interim steps: Activate either the Hill Top Reserve (2017 and 2018 models) or Target Charge Level (2019 models) feature in their vehicle to limit the charge level to 90%, charge their vehicle more frequently, avoid depleting the battery to 70 miles range remaining, park outside after charging, and do not charge the vehicle indoors overnight.",
+        "warning": "Park outside",
+        "ota": false,
+        "noFixYet": false,
+        "makerRef": "N212343880",
+        "status": "done"
+      },
+      {
+        "id": "23V-845",
+        "date": "2023-12-14",
+        "part": "Roof and pillars (structure)",
+        "summary": "General Motors, LLC (GM) is recalling certain 2017-2023 Chevrolet Bolt EV vehicles. This recall includes certain vehicles previously repaired incorrectly under NHTSA recall number 22V-930. After a crash with seat belt pretensioner deployment, the pretensioner exhaust may ignite carpet fibers near the B-pillar, causing a fire.",
+        "consequence": "A fire increases the risk of injury.",
+        "remedy": "Repairs will be performed free of charge. Dealers will inspect both front seat belt pretensioners and, if necessary, install metal foil at the carpet near the pretensioner exhaust. Certain vehicles will also need a pretensioner cover installed. These vehicles were previously recalled for this same issue under recall number 22V-930 and will need to have the new remedy performed.",
+        "ota": false,
+        "noFixYet": false,
+        "makerRef": "N232421970",
+        "status": "ask"
+      },
+      {
+        "id": "22V-930",
+        "date": "2022-12-15",
+        "part": "Roof and pillars (structure)",
+        "summary": "General Motors, LLC (GM) is recalling certain 2017-2023 Chevrolet Bolt EV vehicles. After a crash with seat belt pretensioner deployment, the pretensioner exhaust may ignite carpet fibers near the B-pillar, causing a fire.",
+        "consequence": "A vehicle fire can increase the risk of injury.",
+        "remedy": "Dealers will install metal foil at the carpet near the pretensioner exhaust, and install a pretensioner cover as necessary, free of charge.",
+        "ota": false,
+        "noFixYet": false,
+        "makerRef": "N222383790",
+        "status": "ask"
+      },
+      {
+        "id": "20V-701",
+        "date": "2020-11-13",
+        "part": "Traction battery (electrical system)",
+        "summary": "General Motors LLC (GM) is recalling all 2017-2018 and certain 2019 Chevrolet Bolt EV vehicles. The high voltage battery could catch fire when charged to full or nearly full capacity.",
+        "consequence": "A battery fire increases the risk of injury.",
+        "remedy": "GM will notify owners, and as an interim repair, beginning on November 17, 2020, dealers will reprogram the hybrid propulsion control module 2 (HPCM2) to limit the full charge to 90%, free of charge. This recall has been superseded by recall number 21V-560. Vehicles previously repaired under 20V-701 will still need to have the new remedy under recall 21V-560.",
+        "ota": false,
+        "noFixYet": false,
+        "supersededBy": "21V-560",
+        "makerRef": "N202311730",
+        "status": "ask"
+      }
+    ],
+    "complaints": {
+      "total": 47,
+      "crashes": 0,
+      "fires": 0,
+      "injuries": 0,
+      "deaths": 0,
+      "top": [
+        {
+          "component": "Steering",
+          "count": 43
+        },
+        {
+          "component": "Lane departure",
+          "count": 2
+        },
+        {
+          "component": "Suspension",
+          "count": 2
+        },
+        {
+          "component": "Forward collision avoidance",
+          "count": 1
+        }
+      ]
+    }
+  }
+}
